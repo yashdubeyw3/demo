@@ -384,14 +384,14 @@ nav {
 
     .chat-window {
         margin-inline: 20px;
-        width: calc(80% - 50px);
+        width: calc(40% - 50px);
     }
 
     .chat-message {
-        width: calc(80% - 50px);
+        width: calc(40% - 50px);
     }
 
     .inputandsend-btn {
-        width: calc(80% - 50px);
+        width: calc(40% - 50px);
     }
 }
