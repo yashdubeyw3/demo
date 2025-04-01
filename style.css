@@ -22,6 +22,12 @@ h2 {
     font-family: "Roboto", sans-serif;
 }
 
+h4 {
+    color: rgb(36, 63, 103);
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
 p {
     font-size: 23px;
     color: rgb(36, 63, 103);
@@ -323,6 +329,29 @@ nav {
     margin-right: 10px;
 }
 
+
+/* Big Feature */
+.big-feature-container {
+    justify-content: space-between;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+
+.big-feature-image {
+    max-width: 50%;
+}
+
+.big-feature-image > img {
+    max-width: 100%;    
+}
+
+.big-feature-content {
+    max-width: 45%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1310px) {
 
@@ -402,6 +431,42 @@ nav {
     .inputandsend-btn {
         width: calc(60% - 50px);
     }
+
+    .picture_img {
+        width: calc(100% - 20px);
+        margin-inline: auto;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content > h1 , h4 {
+        align-self: center;
+    }
+
+    .content > p {
+        justify-content: center;
+        padding-inline: 20px;
+        margin-inline: auto;
+    }
+
+      /* big -feature */
+
+    .big-feature-image {
+        min-width: 80%;
+        margin-inline: auto ;
+        margin-block: 50px;
+    }
+
+    .big-feature-content {
+        min-width: 80%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-inline: auto;
+    }
+
 }
 
 @media screen and (max-width: 660px) {
@@ -424,4 +489,20 @@ nav {
     .inputandsend-btn {
         width: calc(100% - 50px);
     }
+
+    .content {
+        width: 100%;
+    }
+
+    .content > h1 , h4 {
+        margin-inline: 20px;
+        align-self: center;
+    }
+
+    .content > p {
+        justify-content: center;
+        padding-inline: 20px;
+        margin-inline: auto;
+    }
+    
 }
