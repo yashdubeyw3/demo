@@ -118,6 +118,7 @@ nav {
     gap: 20px;
     max-width: 30vw;
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 .hero-image {
@@ -174,6 +175,10 @@ nav {
     padding: 30px;
     border-radius: 20px;
     margin-inline: 20px;
+}
+
+.card > h2 {
+    margin-block: 20px;
 }
 
 .card > p {
@@ -384,14 +389,36 @@ nav {
 
     .chat-window {
         margin-inline: 20px;
-        width: calc(40% - 50px);
+        width: calc(60% - 50px);
     }
 
     .chat-message {
-        width: calc(40% - 50px);
+        width: calc(60% - 50px);
     }
 
     .inputandsend-btn {
-        width: calc(40% - 50px);
+        width: calc(60% - 50px);
+    }
+}
+
+@media screen and (max-width: 660px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+
+    .chat-window {
+        margin-inline: 20px;
+        width: calc(100% - 50px);
+    }
+
+    .chat-message {
+        width: calc(100% - 50px);
+    }
+
+    .inputandsend-btn {
+        width: calc(100% - 50px);
     }
 }
