@@ -13,16 +13,19 @@ a {
 h1 {
     color: rgb(36, 63, 103);
     font-size: 60px;
+    font-family: "Roboto", sans-serif;
 }
 
 h2 {
     color: rgb(36, 63, 103);
     font-size: 40px;
+    font-family: "Roboto", sans-serif;
 }
 
 p {
-    font-size: 25px;
+    font-size: 23px;
     color: rgb(36, 63, 103);
+    font-family: "Roboto", sans-serif;
 }
 
 /* Utility class */
