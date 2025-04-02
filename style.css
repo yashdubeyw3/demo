@@ -7,31 +7,32 @@
 a {
     text-decoration: none;
     color: rgb(36, 63, 103);
-    font-size: 25px;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
 }
 
 h1 {
     color: rgb(36, 63, 103);
-    font-size: 60px;
-    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
 }
 
 h2 {
     color: rgb(36, 63, 103);
-    font-size: 40px;
-    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    font-family: "Open Sans", sans-serif;
 }
 
 h4 {
     color: rgb(36, 63, 103);
     font-size: 20px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 p {
     font-size: 23px;
     color: rgb(36, 63, 103);
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Utility class */
@@ -118,6 +119,7 @@ nav {
 }
 
 .hero-container {
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -125,13 +127,17 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 30vw;
+    max-width: 40%;
     margin-left: 20px;
-    margin-top: 20px;
 }
 
 .hero-image {
-    margin-inline: 20px;
+    max-width: 50%;
+    margin-right: 20px;
+}
+
+.hero-image > img {
+    max-width: 100%;    
 }
 
 .hero-content > h1 {
@@ -314,8 +320,8 @@ nav {
     font-size: 20px;
     padding-inline: 30px;
     padding-block: 20px;
-    margin: 10px;
     word-wrap: break-word;
+    margin: 10px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
@@ -474,6 +480,7 @@ nav {
     h1 {
         font-size: 40px;
     }
+
     h2 {
         font-size: 30px;
     }
@@ -513,5 +520,101 @@ nav {
 @media screen and (max-height: 685px) {
     .inputandsend-btn {
         margin-bottom: 30px;
+    }
+}
+
+/* For bigger screen */
+
+
+@media screen and (width >= 2400px) {
+
+    h1 , h2 , h4 {
+        font-size: 60px;
+    }
+
+    a , p {
+        font-size: 25px;
+    }
+
+    .container {
+        max-width: 70%;
+    }
+
+    .chat-icon {
+        transform: scale(2);
+        margin-right: 20px;
+    }
+
+    .chat-bot {
+        max-height: 100%;
+    }
+
+    .chat-window {
+        min-height: 70%;
+        min-width: 10%;
+    }
+
+    .answer , .message {
+        font-size: 25px;
+    }
+
+    .inputandsend-btn  > input{
+        padding: 5%;
+    }
+
+    .inputandsend-btn > button  , .inputandsend-btn > input{
+        font-size: 25px;
+    }
+
+    .chatbot-mark {
+        transform: scale(1.5);
+        margin-bottom: 50px;
+    }
+}
+
+
+@media screen and (width >= 3000px) {
+
+    h1 , h2 , h4 {
+        font-size: 80px;
+    }
+
+    a , p {
+        font-size: 60px;
+    }
+
+    .container {
+        max-width: 70%;
+    }
+
+    .chat-icon {
+        transform: scale(2);
+        margin-right: 20px;
+    }
+
+    .chat-bot {
+        max-height: 100%;
+    }
+
+    .chat-window {
+        min-height: 70%;
+        min-width: 10%;
+    }
+
+    .answer , .message {
+        font-size: 40px;
+    }
+
+    .inputandsend-btn  > input{
+        padding: 5%;
+    }
+
+    .inputandsend-btn > button  , .inputandsend-btn > input{
+        font-size: 40px;
+    }
+
+    .chatbot-mark {
+        transform: scale(1.5);
+        margin-bottom: 50px;
     }
 }
