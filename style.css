@@ -507,3 +507,11 @@ nav {
     }
     
 }
+
+
+/* Height of chatbot */
+@media screen and (max-height: 685px) {
+    .inputandsend-btn {
+        margin-bottom: 30px;
+    }
+}
