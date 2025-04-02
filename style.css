@@ -541,8 +541,9 @@ nav {
     }
 
     .chat-icon {
-        transform: scale(2);
+        transform: scale(1.1);
         margin-right: 20px;
+        margin-bottom: 20px;
     }
 
     .chat-bot {
@@ -580,7 +581,7 @@ nav {
     }
 
     a , p {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .container {
@@ -588,8 +589,9 @@ nav {
     }
 
     .chat-icon {
-        transform: scale(2);
-        margin-right: 20px;
+        transform: scale(1.5);
+        margin-right: 25px;
+        margin-bottom: 25px;
     }
 
     .chat-bot {
@@ -617,4 +619,84 @@ nav {
         transform: scale(1.5);
         margin-bottom: 50px;
     }
+}
+
+@media screen and (width >= 4500px) {
+    .nav-logo {
+        min-width: 40%;
+    }
+
+    .nav-logo > img {
+        min-width: 40%;
+    }
+
+    h1 , h2 , h4 {
+        font-size: 100px;
+    }
+
+    a , p {
+        font-size: 70px;
+        padding: 30px;
+    }
+
+    .chat-icon {
+        transform: scale(2);
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+
+    .chat-bot {
+        max-height: 100%;
+    }
+
+    .chat-window {
+        min-height: 70%;
+        min-width: 10%;
+    }
+
+    .answer , .message {
+        font-size: 50px;
+    }
+
+    .inputandsend-btn  > input{
+        padding: 5%;
+    }
+
+    .inputandsend-btn > button  , .inputandsend-btn > input{
+        font-size: 50px;
+    }
+
+    .chatbot-mark {
+        transform: scale(1.5);
+        margin-bottom: 50px;
+    }
+
+    .hero-content {
+        min-width: 70%;
+    }
+
+    .big-feature-content {
+        min-width: 70%;
+    }
+
+    .card {
+        min-width: 30%;
+        margin-block: 50px;
+    }
+
+    .card > img {
+        transform: scale(2);
+    }
+
+    /*  feature section */
+    .feature-section {
+        background-size: 25%;
+        margin-bottom: 250px;
+    }
+
+    .feature-content {
+        margin-block: 130px;
+        padding: 30px;
+    }
+
 }
