@@ -235,6 +235,7 @@ nav {
     flex-direction: column;
     margin-inline: auto;
     width: 30%;
+    min-height: 50%;
     height: 500px;
     background-color: white;
     overflow-y: auto;
@@ -358,6 +359,68 @@ nav {
     gap: 15px;
 }
 
+
+/* PLatform section */
+
+.platform-section {
+    margin-top: 100px;
+}
+
+.platform-container {
+    flex-direction: column;
+}
+
+.platform-content {
+    margin-inline: auto;
+    text-align: center;
+}
+
+.platform-content > h1 {
+    margin-bottom: 50px;
+}
+
+.platform-content > a  {
+    margin-bottom: 20px;
+}
+
+.platform-cards {
+    flex-wrap: wrap;
+    margin-inline: auto;
+    gap: 20px;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.platform-cards  > .card {
+    margin-top: 70px;
+    max-width: 15%;
+    height: 300px;
+    border-radius: 0px;
+    background-size: cover;
+    transition: all 0.5s;
+}
+
+.platform-cards > .card-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.514) , rgba(0, 0, 0, 0.24)) , url(https://usabilityclone.vercel.app/images/asset%2039.jpeg);
+}
+
+.platform-cards > .card-2 {
+    background-image: linear-gradient(rgba(0, 0, 1, 0.507) , rgba(0, 0, 0, 0.24)) , url(https://usability-hub-clone.vercel.app/assets/asset%2034.jpeg);
+}
+
+.platform-cards > .card-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.479) , rgba(0, 0, 0, 0.24)) , url(https://usability-hub-clone.vercel.app/assets/asset%2035.jpeg);
+}
+
+.platform-cards > .card-4 {
+    background-image: linear-gradient(rgba(0, 0, 1, 0.486) , rgba(0, 0, 0, 0.24)) , url(https://usability-hub-clone.vercel.app/assets/asset%2036.jpeg);
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
 /* Media Queries */
 @media screen and (max-width: 1310px) {
 
@@ -474,6 +537,13 @@ nav {
         margin-inline: auto;
     }
 
+
+    /* PLatform */
+
+    .platform-cards > .card {
+        min-width: 40%;
+        margin-inline: auto;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -512,6 +582,12 @@ nav {
         padding-inline: 20px;
         margin-inline: auto;
     }
+
+      /* PLatform */
+      .platform-cards > .card {
+        min-width: calc(100% - 100px);
+        margin-inline: auto;
+    }
     
 }
 
@@ -524,7 +600,6 @@ nav {
 }
 
 /* For bigger screen */
-
 
 @media screen and (width >= 2400px) {
 
@@ -551,7 +626,7 @@ nav {
     }
 
     .chat-window {
-        min-height: 60%;
+        min-height: 50%;
         min-width: 30%;
     }
 
@@ -598,7 +673,7 @@ nav {
     }
 
     .chat-window {
-        min-height: 60%;
+        min-height: 50%;
         min-width: 30%;
     }
 
@@ -654,12 +729,12 @@ nav {
     }
 
     .chat-window {
-        min-height: 60%;
+        min-height: 50%;
         min-width: 30%;
     }
 
     .answer , .message {
-        padding: 60px;
+        padding-block: 50px;
         font-size: 60px;
     }
 
