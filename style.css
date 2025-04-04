@@ -246,7 +246,7 @@ nav {
 
 .chatbot-mark {
     order: -1;
-    font-size: xx-large;
+    /* font-size: xx-large; */
     margin-bottom: 20px;
     text-align: center;
     align-content: center;
@@ -313,7 +313,7 @@ nav {
 }
 
 .answer{
-    background-color: rgb(234, 219, 238);
+    background-color: rgb(231, 231, 240);
     height: max-content;
     max-width: 38%;
     color: rgb(0, 0, 0);
@@ -471,6 +471,7 @@ footer {
     }
 
     .hero-image{
+        margin-inline: auto;
         text-align: center;
         max-width: 90vw;
     }
@@ -513,6 +514,17 @@ footer {
     }
 
     /* Chat bot */
+
+    .chat-icon-mark {
+        font-size: large;
+    }
+
+    .chat-icon {
+        right: 20px;
+        bottom: 20px;
+        max-height: 50px;
+        max-width: 50px;
+    }
 
     .chat-window {
         margin-inline: 20px;
@@ -606,6 +618,12 @@ footer {
         justify-content: center;
         padding-inline: 20px;
         margin-inline: auto;
+    }
+
+    /* CHatbot */
+    .chat-icon {
+        right: 10px;
+        bottom: 10px;
     }
 
       /* PLatform */
