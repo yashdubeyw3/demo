@@ -93,6 +93,7 @@ nav {
 
 .nav-logo > img {
     width: 300px;
+    margin-inline: 10px;
 }
 
 .nav-links {
@@ -129,6 +130,7 @@ nav {
     gap: 20px;
     max-width: 40%;
     margin-left: 20px;
+    align-items: flex-start;
 }
 
 .hero-image {
@@ -207,12 +209,17 @@ nav {
     position: fixed;
     right: 50px;
     bottom: 50px;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     border-radius: 100%;
-    background-color: #bae2f7;
+    background-color: #000000;
     cursor: pointer;
     font-size: 40px;
+}
+
+.chat-icon-mark {
+    font-size: 30px;
+    color: white;
 }
 
 .chat-bot {
@@ -443,7 +450,7 @@ footer {
 
 .footer-container > h1 , p , a{
     margin-block: 20px;
-    margin-inline: 20px;
+    /* margin-inline: 20px; */
 }
 
 /* Media Queries */
@@ -522,8 +529,8 @@ footer {
     .chat-icon {
         right: 20px;
         bottom: 20px;
-        max-height: 50px;
-        max-width: 50px;
+        max-height: 40px;
+        max-width: 40px;
     }
 
     .chat-window {
