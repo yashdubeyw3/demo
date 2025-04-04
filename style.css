@@ -466,10 +466,15 @@ footer {
     }
 
     .hero-content {
+        margin-inline: auto;
         text-align: center;
         max-width: 100vw;
-        margin-right: 20px;
+        margin-inline: 20px;
         margin-top: 50px;
+    }
+
+    .hero-content > h1 {
+        margin-inline: auto;
     }
 
     .hero-content > a {
